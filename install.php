@@ -52,7 +52,6 @@ require_once 'Typecho/Router.php';
 /** 程序初始化 */
 Typecho_Common::init();
 
-ob_start();
 else:
     require_once dirname(__FILE__) . '/config.inc.php';
 
@@ -69,7 +68,7 @@ else:
     }
 
 endif;
-
+ob_start();
 // 挡掉可能的跨站请求
 if (!empty($_GET) || !empty($_POST)) {
     if (empty($_SERVER['HTTP_REFERER'])) {
