@@ -58,7 +58,7 @@ $db->addServer(array (
   'password' => '2021....',
   'charset' => 'utf8mb4',
   'port' => '3306',
-  'database' => 'typ',
-  'engine' => 'typecho',
+  'database' => 'typecho',
+  'engine' => 'typecho_',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
