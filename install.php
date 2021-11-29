@@ -53,7 +53,6 @@ require_once 'Typecho/Router.php';
 Typecho_Common::init();
 
 else:
-
     require_once dirname(__FILE__) . '/config.inc.php';
 
     //判断是否已经安装
@@ -69,7 +68,7 @@ else:
     }
 
 endif;
-
+ob_start();
 // 挡掉可能的跨站请求
 if (!empty($_GET) || !empty($_POST)) {
     if (empty($_SERVER['HTTP_REFERER'])) {
