@@ -52,8 +52,8 @@ require_once 'Typecho/Router.php';
 /** 程序初始化 */
 Typecho_Common::init();
 
+ob_start();
 else:
-    ob_start();
     require_once dirname(__FILE__) . '/config.inc.php';
 
     //判断是否已经安装
