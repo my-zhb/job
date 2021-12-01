@@ -6,6 +6,9 @@
  * @license    GNU General Public License 2.0
  * @version    $Id$
  */
+ 
+/** 开启https */ 
+define('__TYPECHO_SECURE__',true);
 
 /** 定义根目录 */
 define('__TYPECHO_ROOT_DIR__', dirname(__FILE__));
