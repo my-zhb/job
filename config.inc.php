@@ -54,11 +54,13 @@ Typecho_Common::init();
 /** 定义数据库参数 */
 $db = new Typecho_Db('Pdo_Mysql', 'job_');
 $db->addServer(array (
-  'host' => '111.231.207.228',
-  'user' => 'job',
-  'password' => '2021....',
-  'charset' => 'utf8',
+  'host' => '数据库地址',
+  'user' => '数据库用户',
+  'password' => '数据库密码',
+  'charset' => 'utf8mb4',
   'port' => '3306',
-  'database' => 'job',
+  'database' => '数据库名',
+  'engine' => 'MyISAM',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
+
