@@ -55,8 +55,8 @@ Typecho_Common::init();
 $db = new Typecho_Db('Pdo_Mysql', 'job_');
 $db->addServer(array (
   'host' => '111.231.207.228',
-  'user' => 'job',
-  'password' => '2021....',
+  'user' => 'root',
+  'password' => '2020Fate!',
   'charset' => 'utf8',
   'port' => '3306',
   'database' => 'job',
